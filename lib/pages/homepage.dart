@@ -1,3 +1,4 @@
+import "package:catcomm/widgets/drawer.dart";
 import "package:flutter/material.dart";
 
 class HomePage extends StatelessWidget {
@@ -11,10 +12,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('This isn Manoish Maurya8'),
+          child: Text('This is Manish Maurya'),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
