@@ -1,5 +1,6 @@
 import 'package:catcomm/pages/homepage.dart';
 import 'package:catcomm/pages/login.dart';
+import 'package:catcomm/pages/themes.dart';
 import 'package:catcomm/utils/routes.dart';
 import "package:flutter/material.dart";
 
@@ -14,8 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: HomePage(),
+
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: MyTheme.darkTheme(context),
       darkTheme: ThemeData(brightness: Brightness.light),
 
       initialRoute: MyRoutes.HomeRoute,
